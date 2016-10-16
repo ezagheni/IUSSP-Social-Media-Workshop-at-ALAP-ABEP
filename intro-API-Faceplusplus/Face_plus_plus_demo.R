@@ -48,6 +48,9 @@ url_for_request
 plain_json_output<- getURL(url_for_request)
 plain_json_output
 
+#writeLines(plain_json_output, "Ron_output.json")
+#plain_json_output<-readLines("Ron_output.json")
+
 ## convert the json output into a list
 output_list <- fromJSON(plain_json_output)
 output_list
